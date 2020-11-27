@@ -1,0 +1,142 @@
+/* .top-section {
+    background-color: lightblue;
+} */
+
+/* .header {
+    background-color: lightpink;
+} */
+
+.info-section {
+    background-color: lightblue;
+}
+
+.menu-section {
+    background-color: lightpink;
+}
+
+.feature-section {
+    background-color: lightblue;
+}
+
+.news-section {
+    background-color: lightpink;
+}
+
+.access-section {
+    background-color: lightblue;
+}
+
+.footer {
+    background-color: lightpink;
+}
+/*--------------------------------
+ タグ
+---------------------------------*/
+body {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+.inner {
+    padding: 0 200px;
+}
+.main-section {
+    padding: 100px 0 80px;
+}
+.main-heading {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+/*--------------------------------
+ .top-section
+---------------------------------*/
+
+.top-section {
+    margin: 15px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-left {
+    font-size: 20px;
+}
+.top-name {
+    line-height: 1;
+}
+.top-right {
+    font-size: 14px;
+}
+.gnav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.gnav-item {
+    padding-left: 20px;
+}
+.gnav-link {
+    color: black;
+}
+
+/*--------------------------------
+ header
+---------------------------------*/
+
+.header-img {
+    background-image: url("../img/kitchen.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.header-heading {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+/*--------------------------------
+ .info-section
+---------------------------------*/
+
+.info-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-txt {
+    width: ;
+}
+
+/*--------------------------------
+ .menu-section
+---------------------------------*/
+
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item {
+    width: 30%;
+}
+.menu-img img{
+    width: 100%;
+}
+
+/*--------------------------------
+ .feature-section
+---------------------------------*/
+.feature-item {
+    display: flex;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.feature-img img {
+    height: 300px;
+}
