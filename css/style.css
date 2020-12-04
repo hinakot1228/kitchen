@@ -133,10 +133,79 @@ a {
 ---------------------------------*/
 .feature-item {
     display: flex;
+    justify-content: space-between;
+}
+.row {
+    margin-bottom: 30px;
 }
 .row-reverse {
     flex-direction: row-reverse;
 }
 .feature-img img {
     height: 300px;
+}
+.feature-detail {
+    width:100%;
+}
+.feature-title {
+    padding-bottom: 15px;
+}
+.feature-txt {
+    width: 90%;
+    padding-bottom: 20px;
+}
+.feature-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+button {
+    width: 130px;
+    height: 40px;
+    background-color: brown;
+    color: white;
+    border-style: none;
+    letter-spacing: 1.5px;
+}
+
+/*--------------------------------
+ .news-section
+---------------------------------*/
+.news-center {
+    padding: 0 200px;
+}
+.news-detail {
+    display: flex;
+    flex-direction: row;
+}
+.news-date {
+    padding-right: 50px;
+}
+.news-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/*--------------------------------
+ .access-section
+---------------------------------*/
+.access {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.access-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*--------------------------------
+ footer
+---------------------------------*/
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
