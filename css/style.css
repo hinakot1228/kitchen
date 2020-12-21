@@ -1,3 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*--------------------------------
+ バックグラウンド
+---------------------------------*/
 .info-section {
     background-color: white;
 }
@@ -21,6 +29,8 @@
 .footer {
     background-color: brown;
 }
+
+
 /*--------------------------------
  タグ
 ---------------------------------*/
@@ -224,3 +234,58 @@ button {
     align-items: center;
     color: white;
 }
+
+/*--------------------------------
+ レスポンシブ
+---------------------------------*/
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    .inner {
+        padding: 0px 0px;
+    }
+    .top-section {
+        margin: 15px 15px;
+    }
+    .main-heading {
+        font-size: 20px;
+    }
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item {
+        width: 90%;
+    }
+    .feature-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .feature-img1, .feature-img2 {
+        padding: 0px;
+    }
+    .feature-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .feature-txt {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
