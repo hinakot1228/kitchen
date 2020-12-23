@@ -56,11 +56,24 @@ a {
  .top-section
 ---------------------------------*/
 .top-section {
-    margin: 15px 80px;
+    padding: 0px 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    background-color: white;
+    height: 60px;
+    width: 100vw;
+    z-index: 10;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+}
+.hamburger, .hamburger-menu {
+    display: none;
 }
 .top-left {
     font-size: 20px;
@@ -74,7 +87,7 @@ a {
 .gnav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 .gnav-item {
     padding-left: 20px;
@@ -89,16 +102,23 @@ a {
 
 .header-img {
     background-image: url("../img/food1.jpg");
+    opacity: 0.9;
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-heading {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 20%;
+    left: 20%; */
     font-size: 50px;
+    /* text-shadow: -1px -1px 1px #ffffff, 1px 1px #000000;
+    color: #aaa; */
+    color: white;
 }
 
 /*--------------------------------
@@ -250,6 +270,30 @@ button {
     .top-section {
         margin: 15px 15px;
     }
+    h1 {
+        font-size: 40px;
+        color: white;
+        text-shadow: -1px -1px 1px #ffffff, 1px 1px #000000;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 100%;
+    }
+    .info-bottom {
+        display: flex;
+        justify-content: center;
+    }
+    .info-txt {
+        width: 90%;
+    }
     .main-heading {
         font-size: 20px;
     }
@@ -288,4 +332,47 @@ button {
     }
     button {
         width: 100%;
+        margin-top: 15px;
     }
+    .news-center {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-detail {
+        width: 90%;
+    }
+    .news-date {
+        padding-right: 5px;
+    }
+    .news-bottom {
+        margin-top: 0px;
+    }
+    .news-btn {
+        width: 90%;
+    }
+    .access {
+        display: flex;
+        flex-direction: column;
+    }
+    .access-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .access-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .access-right {
+        margin-top: 40px;
+    }
+    .access-map {
+        display: flex;
+        justify-content: center;
+    }
+    .googlemap {
+        width: 70%;
+    }
+    
