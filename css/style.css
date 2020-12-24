@@ -268,14 +268,109 @@ button {
         padding: 0px 0px;
     }
     .top-section {
-        margin: 15px 15px;
+        /* margin: 15px 15px; */
+        padding: 0 20px;
     }
+
+    /* ハンバーガーメニュー */
+    .gnav-list {
+        display: none;
+    }
+    .hamburger-menu {
+        position: absolute;
+        top: 0;
+        /* ナビメニューを右側に隠す */
+        right: -100%;
+        width: 100%;
+        height: 100px;
+        background-color: burlywood;
+
+        /* 0.7秒かけてナビメニューをスライドさせる */
+        transition: .7s;
+    }
+    .hamburger-menu ul {
+        padding-top: 10px;
+    }
+    .hamburger-menu ul li {
+        list-style-type: none;
+        font-size: 10px;
+    }
+    .hamburger-menu a {
+        display: block;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 10px;
+        transition: .5s;
+    }
+    .hamburger-menu li a:hover {
+        color: white;
+        background-color: violet;
+        /* border-bottom: none; */
+    }
+
+     /* ハンバーガーメニューのアイコン */
+    .hamburger {
+        /* アイコンの位置・幅・高さ */
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 300px;
+        width: 50px;
+        height: 44px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .inner_line {
+        /* 線の縦幅・色 */
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        transition: 1s;
+        border-radius: 4px;
+        background-color: black;
+    }
+    /* 線の位置 */
+    #line1 {
+        top: 0;
+    }
+    #line2 {
+        top: 20px;
+    }
+    #line3 {
+        bottom: 0px;
+    }
+    /* ハンバーガーメニューのアイコンの動き */
+    .inner {
+        transform: translateX(100%);
+    }
+    .line_1, .line_2, .line_3 {
+        background: black;
+    }
+    .line_1 {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .line_2 {
+        opacity: 0;
+    }
+    .line_3 {
+        transform: rotate(45deg);
+        bottom: 0;
+    }
+
+
+
+
+
+
+
     h1 {
         font-size: 40px;
         color: white;
         text-shadow: -1px -1px 1px #ffffff, 1px 1px #000000;
     }
-
     .header {
         display: flex;
         justify-content: center;
