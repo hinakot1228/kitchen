@@ -333,7 +333,9 @@ button {
     }
     .menu-item {
         width: 90%;
+        margin-bottom: 30px;
     }
+
     .feature-items {
         display: flex;
         flex-direction: column;
