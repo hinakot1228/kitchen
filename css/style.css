@@ -55,11 +55,12 @@ a {
 /*--------------------------------
  .top-section
 ---------------------------------*/
+
 .top-section {
     padding: 0px 80px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
     align-items: center;
 
     position: fixed;
@@ -75,6 +76,18 @@ a {
 
     position: relative;
 }
+.top-section-pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.top-left {
+    display: inline-block;
+}
+.top-right {
+    display: inline-block;
+}
 #hamburger-nav,
 #hamburger { 
     display: none;
@@ -88,6 +101,7 @@ a {
 }
 .top-name {
     line-height: 1;
+    font-size: 25px;
 }
 .top-right {
     font-size: 14px;
@@ -102,6 +116,7 @@ a {
 }
 .gnav-link {
     color: black;
+    font-size: 18px;
 }
 
 /*--------------------------------
@@ -168,40 +183,49 @@ header {
 /*--------------------------------
  .feature-section
 ---------------------------------*/
+.feature-items {
+    padding: 0 30px;
+}
 .feature-item {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .row {
     margin-bottom: 30px;
 }
-
 .row-reverse {
     flex-direction: row-reverse;
+    
+}
+.feature-img {
+    /* width: 50%; */
 }
 .feature-img img {
-    height: 300px;
+    /* height: 325px; */
+    width: 488px;
 }
 .feature-img1 {
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 .feature-img2 {
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
 .feature-detail {
-    width:100%;
+    width: 488px;
 }
 .feature-title {
     padding-bottom: 15px;
     font-size: 20px;
 }
 .feature-txt {
-    width: 90%;
+    width: 100%;
     padding-bottom: 20px;
 }
 .feature-btn {
     display: flex;
     justify-content: flex-end;
+    margin-top: 15px;
 }
 button {
     width: 130px;
@@ -271,7 +295,56 @@ button {
  レスポンシブ
 ---------------------------------*/
 @media screen and (max-width: 959px) {
-	/* 959px以下に適用されるCSS（タブレット用） */
+    /* 959px以下に適用されるCSS（タブレット用） */
+    .inner-padding {
+        padding: 0px 40px;
+    }
+    button {
+        width: 180px;
+    }
+    .top-section {
+        padding: 0 40px;
+    }
+    .header-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 100%;
+    }
+    .header-heading {
+        font-size: 70px;
+        color: white;
+        /* text-shadow: -1px -1px 1px #ffffff, 1px 1px #000000; */
+    }
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .menu-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 48%;
+    }
+    .feature-txt, .feature-caption {
+        width: 100%;
+    }
+    .feature-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .news-center {
+        padding: 0 50px;
+    }
+    .news-bottom {
+        margin-top: 20px;
+    }
+    
+    /* .news-btn {
+        width: 180px;
+    } */
+    
+
 }
 
 @media screen and (max-width: 480px) {
@@ -293,7 +366,6 @@ button {
     }
     header {
         width: 100%;
-
     }
     main {
         width: 100%;
