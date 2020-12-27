@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -9,43 +9,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <language initial="ja" lang="ja,en,kr"></language>
 </head>
 
 <body>
     <div class="wrapper">
         <section class="top-section">
-            <!-- <div class="top-left">
-                <div class="top-name"><i class="fas fa-pepper-hot"></i>辛くない韓国食堂</div>
-            </div>
-            <div class="top-right">
-                <nav class="gnav fixed">
-                    <ul class="gnav-list">
-                        <li class="gnav-item"><a class="gnav-link" href="#menu">メニュー</a></li>
-                        <li class="gnav-item"><a class="gnav-link" href="#feature">お店の紹介</a></li>
-                        <li class="gnav-item"><a class="gnav-link" href="#news">お知らせ</a></li>
-                    </ul>
-                </nav>
-            </div> -->
-            
-            <!-- ハンバーガーメニューのナビメニュー -->
-            <!-- <nav class="hamburger-menu">
-                <ul>
-                    <li><a href="#menu">メニュー</a></li>
-                    <li><a href="#feature">お店の紹介</a></li>
-                    <li><a href="#news">お知らせ</a></li>
-                </ul>
-            </nav> -->
-
-            <!-- ハンバーガーメニューのアイコン -->
-            <!-- <div id="hamburger">
-                <span class="inner_line" id="line1"></span>
-                <span class="inner_line" id="line2"></span>
-                <span class="inner_line" id="line3"></span>
-            </div> -->
             <div class="top-section-pc">
                 <!-- 店名 -->
                 <div class="top-left">
-                    <div class="top-name"><i class="fas fa-pepper-hot"></i>辛くない韓国食堂</div>
+                    <div class="top-name" glot-model="title"></i>辛くない韓国食堂</div>
                 </div>
     
                 <!-- ナビ -->
@@ -77,11 +50,23 @@
             </nav>
         </section>
 
+
+        <!-- 言語切り替え -->
+        <section class="language">
+            <nav class="language-change">
+                <a href="#" class="language-link" id="ja">日本語</a>
+                <a href="#" class="language-link" id="en">English</a>
+                <a href="#" class="language-link" id="ko">한국어</a>
+            </nav>
+        </section>
+
+
+
         <header>
             <div class="header">
                 <div class="header-img">
                     <div class="header-heading">
-                        <h1>辛くありません。</h1>
+                        <h1>アカイけど、大丈夫</h1>
                     </div>
                 </div>
             </div>
@@ -96,9 +81,9 @@
                         </div>
                         <div class="info-bottom">
                             <div class="info-txt">
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p>辛い食べ物があまり得意ではない、しかし韓国料理を食べて韓国の食文化を感じたいという想いで開店しました。</p>
+                                <p>写真に見える赤色は唐辛子の赤ではなく、実は赤パプリカの赤なんです。</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -120,8 +105,8 @@
                                 </figure>
                                 <div class="menu-detail">
                                     <div class="menu-txt">
-                                        <h3 class="menu-title">ビビンバ</h3>
-                                        <p class="menu-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                        <h3 class="menu-title">ビビンバの花咲く頃</h3>
+                                        <p class="menu-caption">赤・オレンジ・黄・黄緑・緑・茶・白の色鮮やかな花を咲かせます。</p>
                                     </div>
                                 </div>
                             </div>
@@ -131,8 +116,8 @@
                                 </figure>
                                 <div class="menu-detail">
                                     <div class="menu-txt">
-                                        <h3 class="menu-title">キムパプ</h3>
-                                        <p class="menu-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                        <h3 class="menu-title">キンパはいったい、なぜ？</h3>
+                                        <p class="menu-caption">キンパが愛される理由とは、手軽に、一口で、ご飯・ナムル・お肉・海苔を摂取できることにあります。</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,8 +127,8 @@
                                 </figure>
                                 <div class="menu-detail">
                                     <div class="menu-txt">
-                                        <h3 class="menu-title">マンドゥ(韓国風餃子)</h3>
-                                        <p class="menu-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                        <h3 class="menu-title">マンドゥの声が聞こえる</h3>
+                                        <p class="menu-caption">揚げマンドゥを口に入れた瞬間の"カリッ"という声、聴いてみたいと思いませんか？</p>
                                     </div>
                                 </div>
                             </div>
@@ -166,9 +151,9 @@
                             </figure>
                             <div class="feature-detail">
                                 <div class="feature-txt">
-                                    <h3 class="feature-title">新大久保駅周辺</h3>
-                                    <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                    <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                    <h3 class="feature-title">新大久保駅から徒歩1分</h3>
+                                    <p class="feature-caption">関東のコリアンタウン新大久保である唯一辛く無さをアピールしております。週末は...新大久保に不時着！</p>
+                                    <!-- <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
                                     <div class="feature-btn btn">
                                         <button>More</button>
                                     </div>
@@ -183,8 +168,8 @@
                             <div class="feature-detail">
                                 <div class="feature-txt">
                                     <h3 class="feature-title">おかず食べ放題</h3>
-                                    <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                                    <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                    <p class="feature-caption">いくらでも食べちゃってください！沢山の野菜を食べて、賢い食生活を送りましょう。</p>
+                                    <!-- <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
                                     <div class="feature-btn btn">
                                         <button>More</button>
                                     </div>
@@ -206,26 +191,26 @@
                     <div class="news-center">
                         <div class="news-detail">
                             <div class="news-date">
-                                <time>2020-10-21</time>
+                                <time>2020-01-01</time>
                             </div>
                             <div class="news-txt">
-                                <p>テキストテキストテキストテキストテキストテキスト</p>
+                                <p>赤い味の伝説　－オープンしましたー</p>
                             </div>
                         </div>
                         <div class="news-detail">
                             <div class="news-date">
-                                <time>2020-11-01</time>
+                                <time>2020-05-01</time>
                             </div>
                             <div class="news-txt">
-                                <p>テキストテキストテキストテキストテキストテキスト</p>
+                                <p>よくおごってくれる綺麗なお姉さんと一緒に、当店でお食事はいかがですか？</p>
                             </div>
                         </div>
                         <div class="news-detail">
                             <div class="news-date">
-                                <time>2021-07-07</time>
+                                <time>2020-12-31</time>
                             </div>
                             <div class="news-txt">
-                                <p>テキストテキストテキストテキストテキストテキスト</p>
+                                <p>ウユの其方　－ホットミルクあります！－</p>
                             </div>
                         </div>
                     </div>
@@ -293,6 +278,71 @@
         </footer>
     </div>
     <script src="hamburger.js"></script>
+    <!-- <script src="language.js"></script> -->
+    <!-- <script src="https://unpkg.com/glottologist"></script>
+    <script>
+        const glot = new Glottologist();
+
+        glot.assign('top-name', {
+            ko: '안 매운 한국식당'
+        })
+
+        glot.render();
+
+
+        // 言語切り替え用のイベント処理
+        const ja =document.getElementById('ja');
+        const en =document.getElementById('en');
+        const ko =document.getElementById('ko');
+
+        ja.addEventListener('click', e => {
+            e.preventDefault();
+            glot.render('ja');
+        })
+        en.addEventListener('click', e => {
+            e.preventDefault();
+            glot.render('en');
+        })
+        ko.addEventListener('click', e => {
+            e.preventDefault();
+            glot.render('ko');
+        })
+    </script> -->
+
+
+    <script src="https://unpkg.com/glottologist"></script>
+    <script>
+      const glot = new Glottologist();
+      glot.assign('title', {
+        ja: '辛くない韓国食堂',
+        en: 'Sample Title',
+        ko: '안 매운 한국식당'
+      })
+
+      glot.render();
+
+            /**
+      **言語切り替え用のイベント処理
+      **/
+      const ja = document.getElementById('ja');
+      const en = document.getElementById('en');
+      const zh = document.getElementById('zh');
+
+      ja.addEventListener('click', e => {
+        e.preventDefault();
+        glot.render('ja');
+      })
+      
+      en.addEventListener('click', e => {
+        e.preventDefault()
+        glot.render('en');
+      })
+ 
+      ko.addEventListener('click', e => {
+        e.preventDefault()
+        glot.render('ko');
+      })
+
 </body>
 
 </html>
