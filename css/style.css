@@ -210,10 +210,10 @@ header {
     width: 488px;
 }
 .feature-img1 {
-    /* padding-right: 40px; */
+    padding-right: 40px;
 }
 .feature-img2 {
-    /* padding-left: 40px; */
+    padding-left: 40px;
 }
 .feature-detail {
     width: 488px;
@@ -332,6 +332,12 @@ button {
     }
     .feature-img img {
         width: 300px;
+    }
+    .feature-img1 {
+        padding-right: 20px;
+    }
+    .feature-img2 {
+        padding-left: 20px;
     }
     .feature-detail {
         width: 300px;

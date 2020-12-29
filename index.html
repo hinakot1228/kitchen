@@ -141,7 +141,7 @@
                 <div class="inner-padding">
                     <div class="feature-top">
                         <div class="main-heading">
-                            <h2>お店の紹介</h2>
+                            <h2 glot-model="gnav-item-intro">お店の紹介</h2>
                         </div>
                     </div>
                     <div class="feature-items">
@@ -151,8 +151,8 @@
                             </figure>
                             <div class="feature-detail">
                                 <div class="feature-txt">
-                                    <h3 class="feature-title">新大久保駅から徒歩1分</h3>
-                                    <p class="feature-caption">関東のコリアンタウン新大久保である唯一辛く無さをアピールしております。週末は...新大久保に不時着！</p>
+                                    <h3 class="feature-title" glot-model="feature-txt1">新大久保駅から徒歩1分</h3>
+                                    <p class="feature-caption" glot-model="feature-txt2">関東のコリアンタウン新大久保である唯一辛く無さをアピールしております。週末は...新大久保に不時着！</p>
                                     <!-- <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
                                     <div class="feature-btn btn">
                                         <button>More</button>
@@ -167,7 +167,7 @@
                             </figure>
                             <div class="feature-detail">
                                 <div class="feature-txt">
-                                    <h3 class="feature-title">おかず食べ放題</h3>
+                                    <h3 class="feature-title" glot-model="feature-txt3">おかず食べ放題</h3>
                                     <p class="feature-caption">いくらでも食べちゃってください！沢山の野菜を食べて、賢い食生活を送りましょう。</p>
                                     <!-- <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
                                     <div class="feature-btn btn">
@@ -348,6 +348,21 @@
             ja: '揚げマンドゥを口に入れた瞬間の"カリッ"という声、聴いてみたいと思いませんか？',
             en: 'When the Bibimbap Blooms',
             ko: '만두를 먹을 떄 바삭 바삭 소리를 들어보고 싶으세요?'
+        })
+        glot.assign('feature-txt1', {
+            ja: '新大久保駅から徒歩1分',
+            en: 'It takes 1 minite from　Shinokubo station.',
+            ko: '신오쿠보역에서 도보 1분'
+        })
+        glot.assign('feature-txt2', {
+            ja: '関東のコリアンタウン新大久保である唯一辛く無さをアピールしております。週末は...新大久保に不時着！',
+            en: "The only restaurant that provides non-spicy Korean food. Let's crach landing on Shinokubo this weekend!",
+            ko: '토교 코리아타운 신오투보에 있는 순한 맛을 특징으로 하는  한식당이 여기 밖에 없습니다! 이번 주말에는 신오쿠보에 불시착!'
+        })
+        glot.assign('feature-txt3', {
+            ja: 'おかず食べ放題',
+            en: 'All-you-can-eat side dishes',
+            ko: '반찬 무한리필'
         })
 
       glot.render();
