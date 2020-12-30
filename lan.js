@@ -78,3 +78,33 @@
 //     en: 'All-you-can-eat side dishes',
 //     ko: '반찬 무한리필'
 // })
+// glot.assign('feature-txt4', {
+//     ja: 'いくらでも食べちゃってください！沢山の野菜を食べて、賢い食生活を送りましょう。',
+//     en: 'You can eat as much as you want! ',
+//     ko: '많이 드세요! 슬기로운 식생활을 위해 야채를 많이 먹읍시다~.'
+// })
+// glot.assign('news-txt1', {
+//     ja: '赤い味の伝説　－オープンしましたー',
+//     en: 'Legend of the red flavor -OPEN-',
+//     ko: '빨간 맛의 전설 -오픈했습니다-'
+// })
+// glot.assign('news-txt2', {
+//     ja: 'よくおごってくれる綺麗なお姉さんと一緒に、当店でお食事はいかがですか？',
+//     en: '',
+//     ko: '밥 잘 사주는 예쁜 누나랑 같이 식사하러 오시겠어요?'
+// })
+// glot.assign('news-txt3', {
+//     ja: 'ウユの其方　－ホットミルクあります！－',
+//     en: 'Milk Sonata -Hot milk-',
+//     ko: '우유연가 -따뜻한 우유있습니다!-'
+// })
+// glot.assign('access-address', {
+//     ja: '東京都新宿区百人町●-●-●',
+//     en: '●-●-● Hyakunin town, Shinjuku city, Tokyo',
+//     ko: '토교토 신주쿠쿠 햐쿠닌초 ●-●-●'
+// })
+glot.assign('access-tel', {
+    ja: 'TEL：03-0000-0000（代表）',
+    en: 'TEL：03-0000-0000（The representative）',
+    ko: 'TEL：03-0000-0000（대표）'
+})
