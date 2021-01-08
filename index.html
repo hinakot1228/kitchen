@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400" rel="stylesheet">
     <!-- <language initial="ja" lang="ja,en,kr"></language> -->
 </head>
 
@@ -23,6 +25,13 @@
     
                 <!-- ナビ -->
                 <div class="top-right">
+                    <section class="language">
+                        <nav class="language-change">
+                            <a href="#" class="language-link" id="ja">日本語</a>|
+                            <a href="#" class="language-link" id="en">English</a>|
+                            <a href="#" class="language-link" id="ko">한국어</a>
+                        </nav>
+                    </section>
                     <nav class="gnav fixed">
                         <ul class="gnav-list">
                             <li class="gnav-item"><a class="gnav-link" href="#menu" glot-model="gnav-item-menu">メニュー</a></li>
@@ -30,7 +39,9 @@
                             <li class="gnav-item"><a class="gnav-link" href="#news" glot-model="gnav-item-info">お知らせ</a></li>
                         </ul>
                     </nav>
+                    
                 </div>
+                
             </div>
             
     
@@ -42,23 +53,19 @@
             </div>
             <!-- ハンバーガーメニューのナビメニュー -->
             <nav id="hamburger-nav">
+                
                 <ul>
                     <li><a href="#menu" glot-model="gnav-item-menu">メニュー</a></li>
                     <li><a href="#feature" glot-model="gnav-item-intro">お店の紹介</a></li>
                     <li><a href="#news" glot-model="gnav-item-info">お知らせ</a></li>
                 </ul>
+            
+                
             </nav>
         </section>
 
 
-        <!-- 言語切り替え -->
-        <section class="language">
-            <nav class="language-change">
-                <a href="#" class="language-link" id="ja">日本語</a>
-                <a href="#" class="language-link" id="en">English</a>
-                <a href="#" class="language-link" id="ko">한국어</a>
-            </nav>
-        </section>
+        
 
 
 
@@ -267,6 +274,8 @@
                                 <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.015105929572!2d139.69803711526532!3d35.70124588018957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2f37e44929%3A0x70e03a4ceb52d545!2z5paw5aSn5LmF5L-d6aeF!5e0!3m2!1sja!2sjp!4v1608503385094!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
+                        <div class="for-scroll"></div>
+                        <div id="js-scroll-top" class="scroll-top"><i class="fas fa-chevron-circle-up"></i></div>
                     </div>
                 </div>
             </section>
@@ -277,10 +286,12 @@
             </div>
         </footer>
     </div>
-    <script src="hamburger.js"></script>
-
-
     <script src="https://unpkg.com/glottologist"></script>
+    <script src="hamburger.js"></script>
+    <script src="scroll.js"></script>
+
+
+    
     <script>
       const glot = new Glottologist();
 
@@ -296,12 +307,12 @@
         })
         glot.assign('gnav-item-intro', {
             ja: 'お店の紹介',
-            en: 'INTRODUCTION',
+            en: 'INTRO.',
             ko: '가게 소개'
         })
         glot.assign('gnav-item-info', {
             ja: 'お知らせ',
-            en: 'INFORMATION',
+            en: 'INFO.',
             ko: '공지'
         })
         glot.assign('header-heading', {

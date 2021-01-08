@@ -103,8 +103,8 @@
 //     en: '●-●-● Hyakunin town, Shinjuku city, Tokyo',
 //     ko: '토교토 신주쿠쿠 햐쿠닌초 ●-●-●'
 // })
-glot.assign('access-tel', {
-    ja: 'TEL：03-0000-0000（代表）',
-    en: 'TEL：03-0000-0000（The representative）',
-    ko: 'TEL：03-0000-0000（대표）'
-})
+// glot.assign('access-tel', {
+//     ja: 'TEL：03-0000-0000（代表）',
+//     en: 'TEL：03-0000-0000（The representative）',
+//     ko: 'TEL：03-0000-0000（대표）'
+// })

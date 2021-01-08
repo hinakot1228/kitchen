@@ -1,7 +1,15 @@
+
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: "M PLUS Rounded 1c", "Nanum Gothic Coding";
+    /* font-family: ""; */
 }
+
+
+
+
 
 /*--------------------------------
  バックグラウンド
@@ -44,7 +52,9 @@ a {
     color: brown;
 }
 .inner-padding {
-    padding: 0 200px;
+    /* padding: 0 200px; */
+    width: 80%;
+    margin: 0 auto;
 }
 .main-section {
     padding: 100px 0 80px;
@@ -66,7 +76,7 @@ a {
     /* justify-content: space-between; */
     align-items: center;
 
-    position: fixed;
+    
     background-color: burlywood;
     height: 90px;
     width: 100%;
@@ -78,6 +88,7 @@ a {
     box-sizing: border-box;
 
     position: relative;
+    position: fixed;
 }
 .top-section-pc {
     display: flex;
@@ -108,7 +119,11 @@ a {
     color: black;
 }
 .top-right {
+    /* width: 480px; */
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .gnav-list {
     display: flex;
@@ -121,6 +136,14 @@ a {
 .gnav-link {
     color: black;
     font-size: 18px;
+}
+.language {
+    margin-left: 20px;
+}
+.language-link {
+    color: black;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 /*--------------------------------
@@ -283,6 +306,20 @@ button {
     margin: 10px;
     width: 50px;
 }
+.scroll-top{
+    position: fixed;
+    right: 25px;
+    bottom: 70px;
+    z-index: 100;
+}
+.scroll-top:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.fa-chevron-circle-up {
+    font-size: 40px;
+    color: brown;
+}
 
 /*--------------------------------
  footer
@@ -307,13 +344,22 @@ button {
         width: 180px;
     }
     .top-section {
-        padding: 0 40px;
+        padding: 0 100px 0 40px;
+    }
+    /* .language-change {
+        display: flex;
+        flex-direction: column;
+    } */
+    header {
+        margin-top: 90px;
     }
     .header-img {
         background-size: cover;
         background-repeat: no-repeat;
         height: 450px;
         width: 100%;
+        /* margin-top: 90px; */
+        padding-top: 90px;
     }
     .header-heading {
         font-size: 70px;
@@ -359,6 +405,100 @@ button {
     /* .news-btn {
         width: 180px;
     } */
+        /* ハンバーガーメニュー */
+        .gnav {
+            display: none;
+        }
+        #hamburger-nav {
+            display: block;
+            position: fixed;
+            height: 100vh;
+            width: 40%;
+            left: -40%;
+            top: 0;
+            background-color: white;
+            transition: .7s; 
+            /* z-index: 5; */
+        }
+        #hamburger-nav ul {
+            /* z-index: 5; */
+        }
+        #hamburger-nav ul{
+            /* Xの部分のpadding */
+            padding-top: 80px;
+        }
+        #hamburger-nav ul li {
+            list-style-type: none;
+            font-size: 20px;
+        }
+        #hamburger-nav a {
+            /* ハンバーガーメニューのナビ部分 */
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 0 40px;
+            padding: 10px;
+            transition: .5s;
+        }
+        #hamburger-nav li a:hover {
+            color: white;
+            background-color: burlywood;
+            /* border-bottom: none; */
+        }
+        #hamburger{
+            display: block;
+            display: flex;
+            justify-content: flex-end;
+    
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .inner_line {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background-color: black;
+            transition: 1s;
+            border-radius: 5px;
+        }
+        #line1 {
+            top: 0;
+        }
+        #line2 {
+            top: 18px;
+        }
+        #line3 {
+            bottom: 0px;
+        }
+        .inner {
+            transform: translateX(100%);
+        }
+        .line_1, .line_2, .line_3 {
+            background-color: black;
+        }
+        .line_1 {
+            transform: translateY(18px) rotate(-45deg);
+            top: 0;
+        }
+        .line_2 {
+            opacity: 0;
+        }
+        .line_3 {
+            transform: translateY(-18px) rotate(45deg);
+            bottom: 0;
+        }
+        .gnav-language {
+            margin-top: 30px;
+        }
+    
+    
     
 
 }
@@ -587,6 +727,9 @@ button {
     .line_3 {
         transform: translateY(-18px) rotate(45deg);
         bottom: 0;
+    }
+    .gnav-language {
+        margin-top: 30px;
     }
 
 
