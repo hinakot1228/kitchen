@@ -235,6 +235,54 @@
                 </div>
             </section>
 
+            <section class="contact-section main-section">
+                <div class="inner-padding">
+                    <div class="contact-top">
+                        <div class="main-heading">
+                            <h2 glot-model="contact-heading">ご予約</h2>
+                        </div>
+                    </div>
+                    <div class="contact-bottom">
+                        <div class="contact-title">
+                            <h3 glot-model="contact-info">お客様情報の入力</h3>
+                        </div>
+                        <form action="" method="post">
+                            <div class="contact-item">
+                                <label for="contact-name" glot-model="contact-name">お名前</label>
+                                <input class="inputs" id="contact-name" type="text" name="name">
+                            </div>
+                            <div class="contact-item">
+                                <label for="contact-date" glot-model="contact-date">ご来店日</label>
+                                <input type="date" name="date" id="contact-date">
+                            </div>
+                            <div class="contact-item">
+                                <label for="contact-time" glot-model="contact-time">ご来店時間</label>
+                                <input type="time" name="date" id="contact-time">
+                            </div>
+                            <div class="contact-item">
+                                <label for="contact-people" glot-model="contact-people">人数</label>
+                                <select name="people" id="contact-people">
+                                    <option value="1-2" glot-model="contact-1-2">１～２名</option>
+                                    <option value="2-6" glot-model="contact-3-6">３～６名</option>
+                                    <option value="7-" glot-model="contact-7-">７名以上</option>
+                                </select>
+                            </div>
+                            <div class="contact-item">
+                                <label for="contact-email" glot-model="contact-email">メールアドレス</label>
+                                <input class="inputs" type="email" name="email" id="contact-email">
+                            </div>
+                            <div class="contact-item">
+                                <label for="contact-request" glot-model="contact-request">ご要望</label>
+                                <textarea name="request" id="contact-request" c></textarea>
+                            </div>
+                            <div class="contact-btn btn">
+                                <button type="submit" value="予約する" glot-model="contact-btn">予約する</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
             <section class="access-section">
                 <div class="inner-padding">
                     <div class="access">
@@ -421,6 +469,66 @@
             ja: 'TEL：03-0000-0000（代表）',
             en: 'TEL：03-0000-0000（The representative）',
             ko: 'TEL：03-0000-0000（대표）'
+        })
+        glot.assign('contact-heading', {
+            ja: 'ご予約',
+            en: 'Booking',
+            ko: '예약'
+        })
+        glot.assign('contact-info', {
+            ja: 'お客様情報の入力',
+            en: 'Information input',
+            ko: '정보 입력'
+        })
+        glot.assign('contact-name', {
+            ja: 'お名前',
+            en: 'Name',
+            ko: '이름'
+        })
+        glot.assign('contact-date', {
+            ja: 'ご来店日',
+            en: 'Date',
+            ko: '오실 날짜'
+        })
+        glot.assign('contact-time', {
+            ja: 'ご来店時間',
+            en: 'Time',
+            ko: '예상 시간대'
+        })
+        glot.assign('contact-people', {
+            ja: '人数',
+            en: 'Number of people',
+            ko: '인수'
+        })
+        glot.assign('contact-1-2', {
+            ja: '１～２名',
+            en: '1-2 people',
+            ko: '1-2 명'
+        })
+        glot.assign('contact-3-6', {
+            ja: '３～６名',
+            en: '3-6 people',
+            ko: '3-6 명'
+        })
+        glot.assign('contact-7-', {
+            ja: '７名以上',
+            en: 'More than 7 people',
+            ko: '7 명 이상'
+        })
+        glot.assign('contact-email', {
+            ja: 'メールアドレス',
+            en: 'E-mail',
+            ko: '메일 주소'
+        })
+        glot.assign('contact-request', {
+            ja: 'ご要望',
+            en: 'Request',
+            ko: '요망'
+        })
+        glot.assign('contact-btn', {
+            ja: '予約する',
+            en: 'Book now',
+            ko: '예약하기'
         })
 
 
