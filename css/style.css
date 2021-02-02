@@ -359,13 +359,14 @@ button {
     text-align: center;
     margin-bottom: 20px;
 }
-form {
-    width: 460px;
-    margin: 0 auto;
+.check-form {
+    border: #aaa 3px solid;
+    padding: 40px;
 }
 .contact-item {
     overflow: hidden;
     margin-bottom: 20px;
+    display: flex;
 }
 label {
     float: left;
@@ -396,7 +397,13 @@ textarea {
     display: flex;
     justify-content: center;
 }
-
+.check-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 /*--------------------------------
