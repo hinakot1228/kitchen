@@ -1,10 +1,26 @@
 <?php
 $name = htmlspecialchars($_POST['name']);
-$date = htmlspecialchars()$_POST['date']);
-$time = htmlspecialchars()$_POST['time']);
-$people = htmlspecialchars()$_POST['people']);
-$email = htmlspecialchars()$_POST['email']);
-$request = htmlspecialchars()$_POST['request']);
+$date = htmlspecialchars($_POST['date']);
+$time = htmlspecialchars($_POST['time']);
+$people = htmlspecialchars($_POST['people']);
+$email = htmlspecialchars($_POST['email']);
+$request = htmlspecialchars($_POST['request']);
+
+// 1. DBに接続
+$dsn = 'mysql:dbname=koreanrestaurant;host=localhost'; 
+$user = 'root'; 
+$password=''; 
+$dbh = new PDO($dsn, $user, $password); 
+$dbh->query('SET NAMES utf8'); 
+
+// 2. SQL文の実行
+$sql = 'INSERT INTO `booking`(`name`, `date`, `time`, `people`, `email`, `request`) VALUES ("'. $name.'", "'. $date.'", "'.$time.'", "' . $people.'", "' . $email. '", "' . $request. '")'; 
+$stmt = $dbh->prepare($sql); 
+$stmt->execute(); 
+
+// 3. DBを切断
+$dbh = null; 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +46,7 @@ $request = htmlspecialchars()$_POST['request']);
                 </div>
                 <form action="" method="post">
                     <div class="contact-item">
-                        <p><?php echo $name; ?>様、この度はご予約ありがとうございました。<?php echo $date; ?>の<?php echo $time; ?>にお待ちしております。</p>
+                        <p><?php echo $name; ?>様、この度はご予約ありがとうございました。<br><?php echo $date; ?>の<?php echo $time; ?>にお待ちしております。</p>
                     </div>
                     <div class="contact-btn btn">
                         <button type="button" value="戻る" onclick="location.href='index.php'">ホームへ戻る</button>
