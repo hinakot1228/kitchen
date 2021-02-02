@@ -246,7 +246,7 @@
                         <div class="contact-title">
                             <h3 glot-model="contact-info">お客様情報の入力</h3>
                         </div>
-                        <form action="" method="post">
+                        <form class="contact-form" action="check.php" method="post">
                             <div class="contact-item">
                                 <label for="contact-name" glot-model="contact-name">お名前</label>
                                 <input class="inputs" id="contact-name" type="text" name="name">
@@ -257,7 +257,7 @@
                             </div>
                             <div class="contact-item">
                                 <label for="contact-time" glot-model="contact-time">ご来店時間</label>
-                                <input type="time" name="date" id="contact-time">
+                                <input type="time" name="time" id="contact-time">
                             </div>
                             <div class="contact-item">
                                 <label for="contact-people" glot-model="contact-people">人数</label>
