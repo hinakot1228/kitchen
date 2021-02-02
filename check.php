@@ -1,10 +1,10 @@
 <?php
 $name = htmlspecialchars($_POST['name']);
-$date = htmlspecialchars()$_POST['date']);
-$time = htmlspecialchars()$_POST['time']);
-$people = htmlspecialchars()$_POST['people']);
-$email = htmlspecialchars()$_POST['email']);
-$request = htmlspecialchars()$_POST['request']);
+$date = htmlspecialchars($_POST['date']);
+$time = htmlspecialchars($_POST['time']);
+$people = htmlspecialchars($_POST['people']);
+$email = htmlspecialchars($_POST['email']);
+$request = htmlspecialchars($_POST['request']);
 ?>
 
 <!DOCTYPE html>
