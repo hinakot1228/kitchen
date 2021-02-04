@@ -336,7 +336,7 @@
         </main>
         <footer>
             <div class="footer">
-                <small>&copy; 2020 KURIcafe Co., Ltd.</small>
+                <small>&copy; 2021 HinakoTanaka</small>
             </div>
         </footer>
     </div>
