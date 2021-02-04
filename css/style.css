@@ -366,7 +366,6 @@ button {
 .contact-item {
     overflow: hidden;
     margin-bottom: 20px;
-    display: flex;
 }
 label {
     float: left;
@@ -783,6 +782,21 @@ textarea {
     .news-btn {
         width: 90%;
         margin-top: 15px;
+    }
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .check-form {
+        padding: 20px;
+        width: 70%;
+    }
+    .check-btn {
+        margin-top: 10px;
+    }
+    .check-data {
+        border: 1px #F25042 solid;
+        padding: 5px;
     }
     .access {
         display: flex;
