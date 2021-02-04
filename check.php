@@ -34,37 +34,37 @@ $request = htmlspecialchars($_POST['request']);
                 <form action="thank.php" method="post">
                     <div class="contact-item">
                         <label for="contact-name" glot-model="contact-name">お名前</label>
-                        <p><?php echo $name; ?></p>
+                        <p class="check-data"><?php echo $name; ?></p>
                         <input type="hidden" name="name" value="<?php echo $name; ?>">
                     </div>
                     <div class="contact-item">
                         <label for="contact-date" glot-model="contact-date">ご来店日</label>
-                        <p><?php echo $date; ?></p>
+                        <p class="check-data"><?php echo $date; ?></p>
                         <input type="hidden" name="date" value="<?php echo $date; ?>">
                     </div>
                     <div class="contact-item">
                         <label for="contact-time" glot-model="contact-time">ご来店時間</label>
-                        <p><?php echo $time; ?></p>
+                        <p class="check-data"><?php echo $time; ?></p>
                         <input type="hidden" name="time" value="<?php echo $time; ?>">
                     </div>
                     <div class="contact-item">
                         <label for="contact-people" glot-model="contact-people">人数</label>
-                        <p><?php echo $people; ?></p>
+                        <p class="check-data"><?php echo $people; ?></p>
                         <input type="hidden" name="people" value="<?php echo $people; ?>">
                     </div>
                     <div class="contact-item">
                         <label for="contact-email" glot-model="contact-email">メールアドレス</label>
-                        <p><?php echo $email; ?></p>
+                        <p class="check-data"><?php echo $email; ?></p>
                         <input type="hidden" name="email" value="<?php echo $email; ?>">
                     </div>
                     <div class="contact-item">
                         <label for="contact-request" glot-model="contact-request">ご要望</label>
-                        <p><?php echo $request; ?></p>
+                        <p class="check-data"><?php echo $request; ?></p>
                         <input type="hidden" name="request" value="<?php echo $request; ?>">
                     </div>
                     <div class="btn">
-                        <button type="submit" value="予約する" glot-model="contact-btn">予約する</button>
-                        <button type="reset" value="戻る" onclick="history.back()">戻る</button>
+                        <button class="check-btn" type="submit" value="予約する" glot-model="contact-btn">予約する</button>
+                        <button class="check-btn" type="reset" value="戻る" onclick="history.back()">戻る</button>
                     </div>
                 </form>
             </div>
