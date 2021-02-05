@@ -78,8 +78,10 @@
         <header>
             <div class="header">
                 <div class="header-img">
-                    <div class="header-heading">
-                        <h1 glot-model="header-heading">アカイけど、大丈夫</h1>
+                    <div class="header-filter">
+                        <div class="header-heading">
+                            <h1 glot-model="header-heading"><span>アカイ</span>けど、大丈夫</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,7 +170,7 @@
                                     <p class="feature-caption" glot-model="feature-txt2">関東のコリアンタウン新大久保である唯一辛く無さをアピールしております。週末は...新大久保に不時着！</p>
                                     <!-- <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
                                     <div class="feature-btn btn">
-                                        <button>More</button>
+                                        <button type="button" id="btn">Click</button>
                                     </div>
                                 </div>
 
@@ -184,15 +186,54 @@
                                     <p class="feature-caption" glot-model="feature-txt4">いくらでも食べちゃってください！沢山の野菜を食べて、賢い食生活を送りましょう。</p>
                                     <!-- <p class="feature-caption">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p> -->
                                     <div class="feature-btn btn">
-                                        <button>More</button>
+                                        <button type="button" id="btn2">Click</button>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4>クリックしてくれてありがとう！</h4>
+                        <h4>Thank you for clicking!</h4>
+                        <h4>클릭해 주셔서 감사합니다!</h4>
+
+                        <div class="modal-btn btn">
+                            <button type="button" id="closeBtn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4>クリックしてくれてありがとう！</h4>
+                        <h4>Thank you for clicking!</h4>
+                        <h4>클릭해 주셔서 감사합니다!</h4>
+
+                        <div class="modal-btn btn">
+                            <button type="button" id="closeBtn2">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4>クリックしてくれてありがとう！</h4>
+                        <h4>Thank you for clicking!</h4>
+                        <h4>클릭해 주셔서 감사합니다!</h4>
+
+                        <div class="modal-btn btn">
+                            <button type="button" id="closeBtn3">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section class="news-section main-section" id="news">
                 <div class="inner-padding">
@@ -229,7 +270,7 @@
                     </div>
                     <div class="news-bottom">
                         <div class="news-btn btn">
-                            <button>More</button>
+                            <button type="button" id="btn3">Click</button>
                         </div>
                     </div>
                 </div>
@@ -344,6 +385,7 @@
     <script src="hamburger.js"></script>
     <script src="scroll.js"></script>
     <script src="cursor.js"></script>
+    <script src="modal.js"></script>
 
 
     

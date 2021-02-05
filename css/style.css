@@ -95,9 +95,9 @@ body, a, button, i{
 body {
     line-height: 1.7;
 }
-h1 {
+/* h1 {
     color: white;
-}
+} */
 a {
     text-decoration: none;
 }
@@ -217,17 +217,27 @@ header {
     top: 90px; */
     margin-top: 90px;
 }
+span {
+    color: #F25042;
+}
 .header-img {
     background-image: url("../img/food1.jpg");
-    opacity: 0.9;
+    /* opacity: 0.9; */
     width: 100vw;
     height: 100vh;
     background-size: cover;
     /* position: relative; */
+
+}
+.header-filter {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .header-heading {
     /* position: absolute;
     top: 50%;
@@ -237,6 +247,7 @@ header {
     color: #aaa; */
     color: white;
 }
+
 
 /*--------------------------------
  .info-section
@@ -324,6 +335,34 @@ button {
     color: white;
     border-style: none;
     letter-spacing: 1.5px;
+}
+
+/*--------------------------------
+ .modal
+---------------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    margin: 23% auto;
+
+}
+.modal-btn {
+    margin-top: 10px;
 }
 
 /*--------------------------------
@@ -490,6 +529,15 @@ textarea {
         color: white;
         /* text-shadow: -1px -1px 1px #ffffff, 1px 1px #000000; */
     }
+    .header-filter {
+        height: 450px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
     .menu-items {
         display: flex;
         justify-content: space-between;
@@ -521,6 +569,12 @@ textarea {
     }
     .feature-items {
         padding: 0px;
+    }
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        width: 30%;
+        margin: 55% auto;
     }
     .news-center {
         width: 90%;
@@ -697,6 +751,12 @@ textarea {
         width: 100%;
         padding-top: 80px;
     }
+    .header-filter {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .info-bottom {
         display: flex;
         justify-content: center;
@@ -755,6 +815,12 @@ textarea {
     .feature-btn {
         display: flex;
         justify-content: center;
+    }
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        width: 70%;
+        margin: 90% auto;
     }
     button {
         width: 100%;
