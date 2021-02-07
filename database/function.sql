@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `booking` (
   `date` date,
   `time` time,
   `people` varchar(255),
-  `email` text
+  `email` text,
   `request` text
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
