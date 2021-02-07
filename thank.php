@@ -25,6 +25,20 @@ $charset = "utf8"; //文字コード
 $user = getenv('username'); //MySQLにログインするユーザー名
 $password = getenv('password'); //ユーザーのパスワード
 
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+try {
+    $this->dbh = new PDO($dsn, $user, $password, $options);
+} catch (\PDOException $e) {
+    var_dump($e->getMessage());
+    exit;
+}
+
 // 2. SQL文の実行
 $sql = 'INSERT INTO `booking`(`name`, `date`, `time`, `people`, `email`, `request`) VALUES ("'. $name.'", "'. $date.'", "'.$time.'", "' . $people.'", "' . $email. '", "' . $request. '")'; 
 $stmt = $dbh->prepare($sql); 
