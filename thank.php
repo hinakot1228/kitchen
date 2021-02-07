@@ -6,25 +6,65 @@
 // $dbh = new PDO($dsn, $user, $password); 
 // $dbh->query('SET NAMES utf8'); 
 
-$host = getenv('host'); //MySQLがインストールされてるコンピュータ
-$dbname = getenv('dbname'); //使用するDB
-$charset = "utf8"; //文字コード
-$user = getenv('username'); //MySQLにログインするユーザー名
-$password = getenv('password'); //ユーザーのパスワード
+// $host = getenv('host'); //MySQLがインストールされてるコンピュータ
+// $dbname = getenv('dbname'); //使用するDB
+// $charset = "utf8"; //文字コード
+// $user = getenv('username'); //MySQLにログインするユーザー名
+// $password = getenv('password'); //ユーザーのパスワード
 
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
-];
+// $options = [
+//     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+//     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+//     PDO::ATTR_EMULATE_PREPARES   => false,
+// ];
 
-$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
-try {
-    $this->dbh = new PDO($dsn, $user, $password, $options);
-} catch (\PDOException $e) {
-    var_dump($e->getMessage());
-    exit;
+// $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+// try {
+//     $this->dbh = new PDO($dsn, $user, $password, $options);
+// } catch (\PDOException $e) {
+//     var_dump($e->getMessage());
+//     exit;
+// }
+
+class DbManager
+{
+    public $dbh;
+
+    public function connect()
+    {
+        // //DBに接続 local
+        // $host = "localhost";
+        // $dbname = "todo";
+        // $charset = "utf8mb4";
+        // $user = 'root';
+        // $password = '';
+        
+        $host = getenv('host'); //MySQLがインストールされてるコンピュータ
+        $dbname = getenv('dbname'); //使用するDB
+        $charset = "utf8"; //文字コード
+        $user = getenv('username'); //MySQLにログインするユーザー名
+        $password = getenv('password'); //ユーザーのパスワード
+
+
+        $options = [
+            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES   => false,
+        ];
+
+        $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+        try {
+            $this->dbh = new PDO($dsn, $user, $password, $options);
+        } catch (\PDOException $e) {
+            var_dump($e->getMessage());
+            exit;
+        }
+
+    }
 }
+
+$dbmanager = new DbManager();
+$dbmanager->connect();
 
 $name = htmlspecialchars($_POST['name']);
 $date = htmlspecialchars($_POST['date']);
