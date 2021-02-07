@@ -13,11 +13,17 @@ $request = htmlspecialchars($_POST['request']);
 // $dbh = new PDO($dsn, $user, $password); 
 // $dbh->query('SET NAMES utf8'); 
 
-$host = getenv('us-cdbr-east-03.cleardb.com'); //MySQLがインストールされてるコンピュータ
-$dbname = getenv('heroku_02ff199312307ce'); //使用するDB
+// $host = getenv('us-cdbr-east-03.cleardb.com'); //MySQLがインストールされてるコンピュータ
+// $dbname = getenv('heroku_02ff199312307ce'); //使用するDB
+// $charset = "utf8"; //文字コード
+// $user = getenv('bfc9b0befde9d2'); //MySQLにログインするユーザー名
+// $password = getenv('52614880'); //ユーザーのパスワード
+
+$host = getenv('host'); //MySQLがインストールされてるコンピュータ
+$dbname = getenv('dbname'); //使用するDB
 $charset = "utf8"; //文字コード
-$user = getenv('bfc9b0befde9d2'); //MySQLにログインするユーザー名
-$password = getenv('52614880'); //ユーザーのパスワード
+$user = getenv('username'); //MySQLにログインするユーザー名
+$password = getenv('password'); //ユーザーのパスワード
 
 // 2. SQL文の実行
 $sql = 'INSERT INTO `booking`(`name`, `date`, `time`, `people`, `email`, `request`) VALUES ("'. $name.'", "'. $date.'", "'.$time.'", "' . $people.'", "' . $email. '", "' . $request. '")'; 
