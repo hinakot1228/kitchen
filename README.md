@@ -17,6 +17,7 @@ URL：https://nospicy-koreanrestaurant.herokuapp.com/
   - Glottologist.js
 - PHP
 - MySQL
+- Apache
 - Heroku
 
 # 機能一覧
